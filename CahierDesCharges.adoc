@@ -179,6 +179,5 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 |EXPL003
 |Hébergement de l'application
 |L'application V2 doit être hébergée sur une plateforme permettant l'accès de l'application avec un navigateur ou un client mobile.
-
 |===
 
