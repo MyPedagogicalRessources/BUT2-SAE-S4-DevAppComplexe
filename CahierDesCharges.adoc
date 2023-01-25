@@ -87,7 +87,7 @@ Pour avoir accès à certaines fonctionnalités de CheckYourMood depuis mon mobi
 |US042
 |Consultation des dernières humeurs saisies
 |En tant qu'utilisateur authentifié, +
-Je veux consulter la lsite des 5 dernnières humaeurs saisies, +
+Je veux consulter la liste des 5 dernnières humeurs saisies, +
 Pour prendre connaissance de la tendance de mes dernières humeurs.
 
 |US043
