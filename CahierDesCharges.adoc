@@ -1,0 +1,184 @@
+= Cahier des Charges - Application CheckYourMood v2
+:author: Franck Silvestre
+:title-page: true
+:icons: font
+:toc: left
+:sectnums:
+
+== Introduction
+
+La startup _CheckYourMood_ souhaite développer une deuxième version de son application Web éponyme.
+
+La version 1 de l'application permet à un utilisateur enregistré sur la plateforme d'indiquer son humeur à différents moments de la journée afin de pouvoir disposer de visualisations sur son humeur au fil du temps en fonction de différents paramètres comme la période, le type d'humeur, etc. Pour plus de détails sur la version 1 de l'application, vous pouvez consulter le cahier des charges de la version 1 (cf. SAÉ du semestre 3).
+
+La version 2 de l'application vise 2 objectifs :
+
+* Améliorer la qualité de l'application (code, tests, impact environnemental, sécurité).
+* Fournir une version mobile Android de la saisie des humeurs.
+
+Ce document présente les exigences produits permettant de livrer à la startup la deuxième version de son projet en temps et en heure.
+
+Dans la suite du document, les termes "application", "plateforme" ou "logiciel" désignent de manière indifférente l'application Web _CheckYourMood_.
+
+== Audit qualité de l'application 
+
+Le premier travail de l'équipe concerne la réalisation d'un audit de la version 1 de l'application. Cet audit permettra d'identifier les points faibles de l'application et ainsi de cartographier les points d'amélioration de l'application sur différentes caractéristiques. Une démonstration de la faisabilité de la verison 2 de l'application constituera la dernière partie de l'audit.
+
+[cols="1,1,3"]
+|===
+|Identifiant exigence |Description courte | Exigences
+
+|AUD001
+|Livrable audit 
+|À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. +
+- Le document aura pour nom "SAE-S4-Audit-CheckYourMood-V1-<Noms membres équipe>". +
+- Le document sera structuré en 3 parties en plus de l'introduction et de la conclusion : +
+1. Évaluation +
+2. Plan d'amélioration +
+3. Démonstration de la faisabilité +
+Le document, en tant que livrable produit, sera accessible en ligne avec accès en mode suggestion à toutes les parties prenantes.
+
+|AUD002
+|Caractéristiques à évaluer 
+|La version 1 de l'application devra faire l'objet d'une évaluation sur les caractéristiques suivantes : +
+- La documentation technique et fonctionnelle du code. +
+- La qualité du code. +
+- La couverture du code par les tests et la qualité des tests. +
+- La qualité du dépôt Git et de l'historique des commits. +
+- L'impact environnemental de l'application. +
+- Les performances de l'application. +
+- La sécurité de l'application.
+
+|AUD003
+|Utilisation de PHPStan 
+|L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour soutenir l'évaluation de la qualité du code.
+
+|AUD004
+|Plan d'amélioration
+|L'évaluation de la version 1 de l'application doit conduire à un plan d'amélioration décrivant précisémment les actions qui seront menées sur chacune des caractéristiques évaluées dans le cadre du développement de la version 2 de l'application. +
+Ce plan d'amélioration prendra la forme d'une liste d'exigences techniques, de qualité, etc.
+
+|AUD005
+|Démonstration de la faisabilité du projet
+|La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
+|===
+
+== Améliorations fonctionnelles
+
+Les exigences fonctionnelles sont décrites au format User Story. Elles sont regroupées en _features_. 
+
+=== _Feature_ F004 "Client mobile Android CheckYourMood" 
+
+Cette feature comprend les fonctionnalités relatives à l'utilisation d'un client mobile Android pour utiliser l'application. Dans la suite du document, l'application mobile CheckYourMood Mobile sera désignée par le label CYMDroid.
+
+IMPORTANT: CYMDroid est un client mobile s'interfaçant à l'application CheckYourMood.  CYMDroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modififiées via l'application CheckYourMood via une API REST comme cela est rappelé dans les exigences techniques.
+
+.User stories
+[cols="1,1,2"]
+|===
+|Identifiant exigence |Titre | Description
+
+|US041
+|Authentification
+|En tant qu'utilisateur ayant un compte sur la plateforme, +
+Je veux m'authentifier avec un login et un mot de passe depuis mon application CYMDroid, +
+Pour avoir accès à certaines fonctionnalités de CheckYourMood depuis mon mobile avec une expérience utilisateur optimale.
+
+|US042
+|Consultation des dernières humeurs saisies
+|En tant qu'utilisateur authentifié, +
+Je veux consulter la lsite des 5 dernnières humaeurs saisies, +
+Pour prendre connaissance de la tendance de mes dernières humeurs.
+
+|US043
+|Saisie d'une humeur
+|En tant qu'utilisateur authentifié sur CYMDroid, +
+Je veux ajouter une humeur à tout instant de la journée, +
+Pour obtenir à terme le plus d'information possible sur mon humeur au fil du temps.
+|===
+
+== Exigences techniques
+
+=== Architecture de l'application
+
+[cols="1,2,2"]
+|===
+|Identifiant exigence |Périmètre | Exigences
+
+|ARC001
+|Architecture 3-tiers 
+|L'application est une application Web s'appuyant sur une architecture 3-tiers.
+
+|ARC002
+|Modele Vue Contrôleur
+|L'application est une application conçue sur la base du _design pattern_ MVC.
+
+
+|ARC003
+|API REST 
+|L'application fournie une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
+|===
+
+=== Environnements techniques
+
+[cols="1,2,2"]
+|===
+|Identifiant exigence |Périmètre | Exigences
+
+|TECH001
+|SGBD Relationnel
+|MySQL version 8 ou supérieure
+
+|TECH002
+|Langages de programmation _back-end_
+|Php version 8 ou supérieure, 
+
+|TECH003
+|Langages de programmation _front-end_ web
+|HTML 5, librairie Bootstrap version 5 ou supérieure pour les apports CSS et Javascript
+
+|TECH004
+|Gestion de version de code source
+|Git version 2.32 ou supérieure
+
+|TECH005
+|Environnement de programmation _front-end_ mobile
+|Android version ???
+|===
+
+=== Contraintes de développement
+
+[cols="1,2,2"]
+|===
+|Identifiant exigence |Périmètre | Exigences
+
+|DEV001
+|Tests automatisés
+|Le code des services métier développés dans le Modèle de l'application font l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+
+
+|DEV001
+| Amélioration des tests automatisés
+| Les tests automatisés doivent être complétés de tests unitaires et/ou "_end-to-end_" en conformité avec les objectifs définis dans le plan d'amélioration établi par l'équipe. 
+|===
+
+=== Contraintes d'exploitation
+
+[cols="1,2,2"]
+|===
+|Identifiant exigence |Périmètre | Exigences
+
+|EXPL001
+|Temps de réponse
+|Toutes les pages du site doivent s'afficher en moins de 0,1 secondes dans l'environnement de développement
+
+|EXPL002
+|Sauvegarde données quotidienne
+|Tous les jours à 3h du matin, un dump de la base de données doit être exécuté et envoyé sur un serveur de sauvegarde via le protocole SFTP ou équivalent.
+
+|EXPL003
+|Hébergement de l'application
+|L'application V2 doit être hébergée sur une plateforme permettant l'accès de l'application avec un navigateur ou un client mobile.
+
+|===
+

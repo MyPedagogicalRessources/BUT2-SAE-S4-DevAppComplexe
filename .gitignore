@@ -1,0 +1,6 @@
+*.html
+*.pdf
+reveal.js
+node_modules
+.DS_Store
+*.lock
