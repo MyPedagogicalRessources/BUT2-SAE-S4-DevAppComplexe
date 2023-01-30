@@ -157,9 +157,18 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 |Le code des services métier développés dans le Modèle de l'application font l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
 
 
-|DEV001
+|DEV002
 | Amélioration des tests automatisés
-| Les tests automatisés doivent être complétés de tests unitaires et/ou "_end-to-end_" en conformité avec les objectifs définis dans le plan d'amélioration établi par l'équipe. 
+| Les tests automatisés sur les services doivent être complétés de tests unitaires  de manière à respecter la pyramide des tests de M. Cohn. 
+
+|DEV003
+| Workflow Git
+| L'équipe doit mettre en œuvre le https://githubflow.github.io/[_Github flow_] ainsi que les autres bonnes pratiques Git comme la bonne utilisation de fichiers ``.gitgnore``.
+
+
+|DEV004
+| Projet "dockerisé"
+| L'équipe devra partir du projet "dockerisé" accessibe via un lien Github Classroom transmis par l'équipe pédagogique.
 |===
 
 === Contraintes d'exploitation
