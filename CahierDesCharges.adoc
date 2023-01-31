@@ -143,7 +143,7 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 
 |TECH005
 |Environnement de programmation _front-end_ mobile
-|Android version ???
+|Android version 11. Le _front-end_ mobile devra fonctionner sur les tablettes fournies par l'IUT.
 |===
 
 === Contraintes de développement
