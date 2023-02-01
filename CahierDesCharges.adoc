@@ -167,8 +167,12 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 
 
 |DEV004
-| Projet "dockerisé"
-| L'équipe devra partir du projet "dockerisé" accessibe via un lien Github Classroom transmis par l'équipe pédagogique.
+| Projet CYMDroid "virtualisé"
+| Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle. 
+
+|DEV005
+| Projet CheckYourMood "virtualisé"
+| Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle.
 |===
 
 === Contraintes d'exploitation

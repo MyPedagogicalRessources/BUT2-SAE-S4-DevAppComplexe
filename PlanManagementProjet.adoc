@@ -170,6 +170,12 @@ Cette section récapitule les livrables devant être produits dans le cadre du p
 
 - Le code source hébergé sur Github.
 
+==== Machines virtuelles
+
+- Les images des machines virtuelles exigées par le cahier des charges. 
+
+WARNING: Lieu de stockage à définir.
+
 ==== La documentation 
 
     DOC001 : Documentation utilisateur (peut être multiple, administrateur, utilisateur, …). À chaque sprint ayant ajouté des fonctionnalités utilisateurs, la documentation utilisateur doit être maintenue à jour.
