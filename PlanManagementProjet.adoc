@@ -138,7 +138,7 @@ Les outils sont indispensables à la mise en œuvre d'un processus. Cette sectio
     
     GIT004 : Certaines parties prenantes (client, enseignant tuteur) peuvent avoir accès au projet Github en tant que contributeur.
 
-    Proj019 : Le workflow Github flow doit être utilisé pour la gestion des contributions des différents membres du projet.
+    GIT005 : Le workflow https://githubflow.github.io/[_Github flow_] doit être utilisé pour la gestion des contributions des différents membres du projet. Les autres bonnes pratiques Git comme la bonne utilisation de fichiers ``.gitgnore`` doivent être mobilisées.
 
 === Zenhub
 

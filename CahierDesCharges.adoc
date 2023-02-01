@@ -162,15 +162,10 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 | Les tests automatisés sur les services doivent être complétés de tests unitaires  de manière à respecter la pyramide des tests de M. Cohn. 
 
 |DEV003
-| Workflow Git
-| L'équipe doit mettre en œuvre le https://githubflow.github.io/[_Github flow_] ainsi que les autres bonnes pratiques Git comme la bonne utilisation de fichiers ``.gitgnore``.
-
-
-|DEV004
 | Projet CYMDroid "virtualisé"
 | Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle. 
 
-|DEV005
+|DEV004
 | Projet CheckYourMood "virtualisé"
 | Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle.
 |===
