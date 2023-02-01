@@ -153,7 +153,7 @@ Afin de suivre l'évolution du travail pendant un sprint, on utilise un tableau 
     DRI001 : Les documents bureautiques (comptes-rendus, documentation, etc.) des livrables produit ou projet doivent être conçus à l'aide de la suite bureautique Google et stockés sur un Drive attaché à un compte de l'IUT de Rodez appartenant à un des membres de l'équipe.
 
     DRI002 : Ces documents sont regroupés dans un dossier partagé avec l'ensemble des parties prenantes (enseignant tuteur, client, enseignant suivi de projet). 
-    Nom du dossier  : SAE XX (No du projet)  - Intitulé du projet de la SAE - S3.
+    Nom du dossier  : SAE XX (No du projet)  - Intitulé du projet de la SAE - S4.
 
 == Livrables
 
@@ -184,9 +184,12 @@ WARNING: Lieu de stockage à définir.
 
     DOC003: La documentation technique doit être composée :
     - d'une description de l'architecture technique du projet 
+    - d'une description des modèles de données utilisés
     - d'une description des technologies utilisées
     - d'une description de points spécifiques techniques particuliers dépendants du projet (par exemple la sécurité sur un projet web, la présentation d'un algorithme complexe, etc.). 
     - Et de tous les éléments demandés par l'enseignant tuteur.
+
+    IMPORTANT: La documentation technique sera évaluée sur sa capacité à permettre à un nouvel arrivant sur le projet de comprendre et de s'approprier la solution sur le plan technique.
 
 === Livrables projet
 
@@ -213,7 +216,7 @@ Le fichier README.md à la racine du projet sur Github présente une fiche synth
 
     ST001 : Un document de suivi des temps individuels (un seul fichier de type sheet avec une feuille par étudiant utilisant le même modèle). Contenu : 
     - date / tâche / travail réalisé / Catégorie / estimation % de réalisation / temps passé). 
-    - Temps totalisé par étudiant, par sprint et global sur le semestre (S3 / S4) avec graphiques.
+    - Temps totalisé par étudiant, par sprint et global sur le semestre (S4) avec graphiques.
 
 ==== Les comptes-rendus de réunions
 
