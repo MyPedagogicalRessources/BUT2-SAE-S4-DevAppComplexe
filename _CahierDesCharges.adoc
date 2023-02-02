@@ -32,10 +32,11 @@ Le premier travail de l'équipe concerne la réalisation d'un audit de la versio
 |Livrable audit 
 |À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. +
 - Le document aura pour nom "SAE-S4-Audit-CheckYourMood-V1-<Noms membres équipe>". +
-- Le document sera structuré en 3 parties en plus de l'introduction et de la conclusion : +
+- Le document sera structuré en 4 parties en plus de l'introduction et de la conclusion : +
 1. Évaluation +
 2. Plan d'amélioration +
-3. Démonstration de la faisabilité +
+3. Choix de la configuration des machines virtuelles
+4. Démonstration de la faisabilité +
 Le document, en tant que livrable produit, sera accessible en ligne avec accès en mode suggestion à toutes les parties prenantes.
 
 |AUD002
@@ -59,6 +60,10 @@ Le document, en tant que livrable produit, sera accessible en ligne avec accès 
 Ce plan d'amélioration prendra la forme d'une liste d'exigences techniques, de qualité, etc.
 
 |AUD005
+|Choix de la configuration des machines virtuelles
+|Les contraintes de développement décrivent des exigences relatives à l'utilisation de la virtualisation pour faciliter la recette du projet (DEV003 et DEV004). La partie "Choix de la configuration des machines virtuelles" doit contenir les spécifications des machines virtuelles à mettre en place pour répondre aux exigences DEV003 et DEV004.
+
+|AUD006
 |Démonstration de la faisabilité du projet
 |La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
 |===
@@ -143,7 +148,7 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 
 |TECH005
 |Environnement de programmation _front-end_ mobile
-|Android version 11. Le _front-end_ mobile devra fonctionner sur les tablettes fournies par l'IUT.
+|Android version 9. Le _front-end_ mobile devra fonctionner sur les tablettes fournies par l'IUT.
 |===
 
 === Contraintes de développement
@@ -163,29 +168,12 @@ Pour obtenir à terme le plus d'information possible sur mon humeur au fil du te
 
 |DEV003
 | Projet CYMDroid "virtualisé"
-| Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle. 
+| Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
 
 |DEV004
 | Projet CheckYourMood "virtualisé"
-| Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle.
+| Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
 |===
 
-=== Contraintes d'exploitation
 
-[cols="1,2,2"]
-|===
-|Identifiant exigence |Périmètre | Exigences
-
-|EXPL001
-|Temps de réponse
-|Toutes les pages du site doivent s'afficher en moins de 0,1 secondes dans l'environnement de développement
-
-|EXPL002
-|Sauvegarde données quotidienne
-|Tous les jours à 3h du matin, un dump de la base de données doit être exécuté et envoyé sur un serveur de sauvegarde via le protocole SFTP ou équivalent.
-
-|EXPL003
-|Hébergement de l'application
-|L'application V2 doit être hébergée sur une plateforme permettant l'accès de l'application avec un navigateur ou un client mobile.
-|===
 
