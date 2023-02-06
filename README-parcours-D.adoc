@@ -1,4 +1,4 @@
-= SAÉ S4 - Introduction générale
+= SAÉ S4 parcours D - Introduction générale
 :author: Équipe pédagogique BUT Informatique de Rodez
 :title-page: true
 :icons: font
