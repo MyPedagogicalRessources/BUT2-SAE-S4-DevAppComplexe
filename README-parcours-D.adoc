@@ -25,8 +25,7 @@ avec des méthodes classiques ou agiles
 === Objectifs et problématique professionnelle :
 
 La problématique professionnelle est de mettre en place, au sein de l’équipe, l’organisation du projet et d’intégrer un progiciel
-dans un système d’information en garantissant la faisabilité et en suivant une démarche de développement itérative ou incrémentale. Après avoir analysé les processus métiers et les besoins du client, il sera nécessaire d’intégrer et adapter un progiciel
-(ou module) pour répondre à cette demande. Il sera nécessaire veiller aux caractéristiques de qualité définies par l’entreprise.
+dans un système d’information en garantissant la faisabilité et en suivant une démarche de développement itérative ou incrémentale. Après avoir analysé les processus métiers et les besoins du client, il sera nécessaire d’intégrer et adapter un progiciel (ou module) pour répondre à cette demande. Il sera nécessaire de veiller aux caractéristiques de qualité définies par l’entreprise.
 
 === Descriptif générique :
 En partant d’un système d’information existant, l’équipe devra en évaluer l’adéquation aux processus métiers, la qualité logicielle
