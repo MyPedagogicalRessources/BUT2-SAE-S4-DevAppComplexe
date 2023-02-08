@@ -24,49 +24,60 @@ Dans la suite du document, les termes "application", "plateforme" ou "logiciel" 
 
 Le premier travail de l'équipe concerne la réalisation d'un audit de la version 1 de l'application. Cet audit permettra d'identifier les points faibles de l'application et ainsi de cartographier les points d'amélioration de l'application sur différentes caractéristiques. Une démonstration de la faisabilité de la verison 2 de l'application constituera la dernière partie de l'audit.
 
-[cols="1,1,3"]
-|===
-|Identifiant exigence |Description courte | Exigences
+====
+*AUD001 - Livrable audit* 
 
-|AUD001
-|Livrable audit 
-|À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. +
-- Le document aura pour nom "SAE-S4-Audit-CheckYourMood-V1-<Noms membres équipe>". +
-- Le document sera structuré en 4 parties en plus de l'introduction et de la conclusion : +
-1. Évaluation +
-2. Plan d'amélioration +
+À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. 
+
+* Le document aura pour nom "SAE-S4-Audit-CheckYourMood-V1-<Noms membres équipe>".
+* Le document sera structuré en 4 parties en plus de l'introduction et de la conclusion :
+    
+1. Évaluation 
+2. Plan d'amélioration
 3. Choix de la configuration des machines virtuelles
-4. Démonstration de la faisabilité +
+4. Démonstration de la faisabilité
+
 Le document, en tant que livrable produit, sera accessible en ligne avec accès en mode suggestion à toutes les parties prenantes.
+====
 
-|AUD002
-|Caractéristiques à évaluer 
-|La version 1 de l'application devra faire l'objet d'une évaluation sur les caractéristiques suivantes : +
-- La documentation technique et fonctionnelle du code. +
-- La qualité du code. +
-- La couverture du code par les tests et la qualité des tests. +
-- La qualité du dépôt Git et de l'historique des commits. +
-- L'impact environnemental de l'application. +
-- Les performances de l'application. +
-- La sécurité de l'application.
+====
+*AUD002 - Caractéristiques à évaluer* 
 
-|AUD003
-|Utilisation de PHPStan 
-|L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour soutenir l'évaluation de la qualité du code.
+La version 1 de l'application devra faire l'objet d'une évaluation sur les caractéristiques suivantes : 
 
-|AUD004
-|Plan d'amélioration
-|L'évaluation de la version 1 de l'application doit conduire à un plan d'amélioration décrivant précisémment les actions qui seront menées sur chacune des caractéristiques évaluées dans le cadre du développement de la version 2 de l'application. +
+* La documentation technique et fonctionnelle du code. 
+* La qualité du code. 
+* La couverture du code par les tests et la qualité des tests. 
+* La qualité du dépôt Git et de l'historique des commits. 
+* L'impact environnemental de l'application. 
+* Les performances de l'application. 
+* La sécurité de l'application.
+====
+
+====
+*AUD003 - Utilisation de PHPStan* 
+
+L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour soutenir l'évaluation de la qualité du code.
+====
+
+====
+*AUD004 - Plan d'amélioration*
+
+L'évaluation de la version 1 de l'application doit conduire à un plan d'amélioration décrivant précisémment les actions qui seront menées sur chacune des caractéristiques évaluées dans le cadre du développement de la version 2 de l'application. +
 Ce plan d'amélioration prendra la forme d'une liste d'exigences techniques, de qualité, etc.
+====
 
-|AUD005
-|Choix de la configuration des machines virtuelles
-|Les contraintes de développement décrivent des exigences relatives à l'utilisation de la virtualisation pour faciliter la recette du projet (DEV003 et DEV004). La partie "Choix de la configuration des machines virtuelles" doit contenir les spécifications des machines virtuelles à mettre en place pour répondre aux exigences DEV003 et DEV004.
+====
+*AUD005 - Choix de la configuration des machines virtuelles*
 
-|AUD006
-|Démonstration de la faisabilité du projet
-|La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
-|===
+Les contraintes de développement décrivent des exigences relatives à l'utilisation de la virtualisation pour faciliter la recette du projet (DEV003 et DEV004). La partie "Choix de la configuration des machines virtuelles" doit contenir les spécifications des machines virtuelles à mettre en place pour répondre aux exigences DEV003 et DEV004.
+====
+
+====
+*AUD006 - Démonstration de la faisabilité du projet*
+
+La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
+====
 
 == Améliorations fonctionnelles
 
@@ -78,102 +89,122 @@ Cette feature comprend les fonctionnalités relatives à l'utilisation d'un clie
 
 IMPORTANT: CYMDroid est un client mobile s'interfaçant à l'application CheckYourMood.  CYMDroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modififiées via l'application CheckYourMood via une API REST comme cela est rappelé dans les exigences techniques.
 
-.User stories
-[cols="1,1,2"]
-|===
-|Identifiant exigence |Titre | Description
+====
+*US041 - Authentification*
 
-|US041
-|Authentification
-|En tant qu'utilisateur ayant un compte sur la plateforme, +
+En tant qu'utilisateur ayant un compte sur la plateforme, +
 Je veux m'authentifier avec un login et un mot de passe depuis mon application CYMDroid, +
 Pour avoir accès à certaines fonctionnalités de CheckYourMood depuis mon mobile avec une expérience utilisateur optimale.
+====
 
-|US042
-|Consultation des dernières humeurs saisies
-|En tant qu'utilisateur authentifié, +
+====
+*US042 - Consultation des dernières humeurs saisies*
+
+En tant qu'utilisateur authentifié, +
 Je veux consulter la liste des 5 dernnières humeurs saisies, +
 Pour prendre connaissance de la tendance de mes dernières humeurs.
+====
 
-|US043
-|Saisie d'une humeur
-|En tant qu'utilisateur authentifié sur CYMDroid, +
+====
+*US043 - Saisie d'une humeur*
+
+En tant qu'utilisateur authentifié sur CYMDroid, +
 Je veux ajouter une humeur à tout instant de la journée, +
 Pour obtenir à terme le plus d'information possible sur mon humeur au fil du temps.
-|===
+====
 
 == Exigences techniques
 
 === Architecture de l'application
 
-[cols="1,2,2"]
-|===
-|Identifiant exigence |Périmètre | Exigences
 
-|ARC001
-|Architecture 3-tiers 
-|L'application est une application Web s'appuyant sur une architecture 3-tiers.
+====
+*ARC001 - Architecture 3-tiers*
 
-|ARC002
-|Modele Vue Contrôleur
-|L'application est une application conçue sur la base du _design pattern_ MVC.
+L'application est une application Web s'appuyant sur une architecture 3-tiers.
+====
 
+====
+*ARC002 - Modele Vue Contrôleur*
 
-|ARC003
-|API REST 
-|L'application fournie une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
-|===
+L'application est une application conçue sur la base du _design pattern_ MVC.
+====
+
+====
+*ARC003 - API REST*
+
+L'application fournie une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
+====
 
 === Environnements techniques
 
-[cols="1,2,2"]
-|===
-|Identifiant exigence |Périmètre | Exigences
+====
+*TECH001 - SGBD Relationnel*
 
-|TECH001
-|SGBD Relationnel
-|MySQL version 8 ou supérieure
+MySQL version 8 ou supérieure.
+====
 
-|TECH002
-|Langages de programmation _back-end_
-|Php version 8 ou supérieure, 
+====
+*TECH002 - Langages de programmation _back-end_*
 
-|TECH003
-|Langages de programmation _front-end_ web
-|HTML 5, librairie Bootstrap version 5 ou supérieure pour les apports CSS et Javascript
+Php version 8 ou supérieure. 
+====
 
-|TECH004
-|Gestion de version de code source
-|Git version 2.32 ou supérieure
+====
+*TECH003 - Langages de programmation _front-end_ web*
 
-|TECH005
-|Environnement de programmation _front-end_ mobile
-|Android version 9. Le _front-end_ mobile devra fonctionner sur les tablettes fournies par l'IUT.
-|===
+HTML 5, librairie Bootstrap version 5 ou supérieure pour les apports CSS et Javascript.
+====
+
+====
+*TECH004 - Gestion de version de code source*
+
+Git version 2.32 ou supérieure
+====
+
+====
+*TECH005 - Environnement de programmation _front-end_ mobile*
+
+Android version 9. Le _front-end_ mobile devra fonctionner sur une machine virtuelle Android (cf. DEV003).
+====
 
 === Contraintes de développement
 
-[cols="1,2,2"]
-|===
-|Identifiant exigence |Périmètre | Exigences
+====
+*DEV001 - Tests automatisés sur les services*
 
-|DEV001
-|Tests automatisés
-|Le code des services métier développés dans le Modèle de l'application font l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+Le code des services métier développés dans le Modèle de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+====
 
+====
+*DEV002 - Tests automatisés sur les contrôleurs*
 
-|DEV002
-| Amélioration des tests automatisés
-| Les tests automatisés sur les services doivent être complétés de tests unitaires  de manière à respecter la pyramide des tests de M. Cohn. 
+Le code des contrôleurs de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+====
 
-|DEV003
-| Projet CYMDroid "virtualisé"
-| Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
+====
+*DEV003 - Amélioration des tests automatisés*
 
-|DEV004
-| Projet CheckYourMood "virtualisé"
-| Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
-|===
+La répartition entre les tests unitaires et tests d'intégration doit se conformer à l'esprit de la pyramide des tests de M. Cohn. 
+====
+
+====
+*DEV004 - Utilisation de PHPStan* 
+
+L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour maintenir la qualité du code tout au long du projet.
+====
+
+====
+*DEV005 - Projet CYMDroid "virtualisé"*
+
+Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
+====
+
+====
+*DEV006 - Projet CheckYourMood "virtualisé"*
+
+Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
+====
 
 
 
