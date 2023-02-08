@@ -188,10 +188,11 @@ WARNING: Lieu de stockage à définir.
     DOC002 : À chaque sprint, la documentation technique doit être maintenue à jour.
 
     DOC003: La documentation technique doit être composée :
-    - d'une description de l'architecture technique du projet 
-    - d'une description des modèles de données utilisés
-    - d'une description des technologies utilisées
-    - d'une description de points spécifiques techniques particuliers dépendants du projet (par exemple la sécurité sur un projet web, la présentation d'un algorithme complexe, etc.). 
+    - d'une description de l'architecture technique du projet, 
+    - d'une description des modèles de données utilisés,
+    - d'une description des technologies utilisées,
+    - d'une description de la stratégie de tests (taux de couverture du code, répartition tests unitaires/tests intégration) et de la stratégie du maintien de la qualité du code avec PHPStan,
+    - d'une description de points spécifiques techniques particuliers dépendants du projet (par exemple la sécurité sur un projet web, la présentation d'un algorithme complexe, etc.),
     - Et de tous les éléments demandés par l'enseignant tuteur.
 
 IMPORTANT: La documentation technique sera évaluée sur sa capacité à permettre à un nouvel arrivant sur le projet de comprendre et de s'approprier la solution sur le plan technique.
