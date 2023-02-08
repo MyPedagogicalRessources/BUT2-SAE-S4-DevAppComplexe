@@ -124,7 +124,7 @@ La communication entre les membres de l'équipe, entre l'équipe et les autres p
 
     COM002: Toutes les parties prenantes peuvent communiquer via l'outil de communication projet. 
 
-== Les outils de gestion de configuration
+== Les outils en soutien à la gestion de projet
 
 Les outils sont indispensables à la mise en œuvre d'un processus. Cette section spécifie les outils à mobiliser pour gérer les livrables à produire.
 
@@ -163,7 +163,11 @@ Cette section récapitule les livrables devant être produits dans le cadre du p
 
 ==== Audit qualité de l'application 
 
-Voir exigences AUD001 du cahier des charges.
+Voir exigence AUD001 du cahier des charges.
+
+=== Diaporama de la restitution en anglais du travail sur l'impact environnemental
+
+Voir exigence AUD007 du cahier des charges.
 
 ==== Les exigences produit
 
@@ -179,7 +183,7 @@ Voir exigences AUD001 du cahier des charges.
 
 - Les images des machines virtuelles exigées par le cahier des charges. 
 
-WARNING: Lieu de stockage à définir.
+WARNING: Lieu de stockage reste à définir.
 
 ==== La documentation 
 

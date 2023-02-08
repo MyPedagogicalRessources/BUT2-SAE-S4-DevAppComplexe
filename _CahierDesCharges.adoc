@@ -79,6 +79,13 @@ Les contraintes de développement décrivent des exigences relatives à l'utilis
 La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
 ====
 
+====
+*AUD007 - Restitution en anglais du travail sur l'impact environnemental*
+
+L'évaluation de l'impact environnemental et le plan d'amélioration associé à cette partie de l'évaluation feront l'objet d'une restitution orale en anglais. Cette soutenance en anglais s'appuira sur un diaporama rédigé en anglais. +
+Le document contenant le diaporama aura pour nom "SAE-S4-Environment-Impact-<Noms membres équipe>"
+====
+
 == Améliorations fonctionnelles
 
 Les exigences fonctionnelles sont décrites au format User Story. Elles sont regroupées en _features_. 
