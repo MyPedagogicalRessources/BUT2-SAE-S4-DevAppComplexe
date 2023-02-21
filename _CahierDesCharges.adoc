@@ -94,7 +94,7 @@ Les exigences fonctionnelles sont décrites au format User Story. Elles sont reg
 
 Cette feature comprend les fonctionnalités relatives à l'utilisation d'un client mobile Android pour utiliser l'application. Dans la suite du document, l'application mobile CheckYourMood Mobile sera désignée par le label CYMDroid.
 
-IMPORTANT: CYMDroid est un client mobile s'interfaçant à l'application CheckYourMood.  CYMDroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modififiées via l'application CheckYourMood via une API REST comme cela est rappelé dans les exigences techniques.
+IMPORTANT: CYMDroid est un client mobile s'interfaçant à l'application CheckYourMood.  CYMDroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modifiées via l'application CheckYourMood via une API REST comme cela est rappelé dans les exigences techniques.
 
 ====
 *US041 - Authentification*
@@ -186,7 +186,7 @@ Le code des services métier développés dans le Modèle de l'application fait 
 ====
 *DEV002 - Tests automatisés sur les contrôleurs*
 
-Le code des contrôleurs de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+Le code des contrôleurs de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 40%. 
 ====
 
 ====
