@@ -48,7 +48,6 @@ La version 1 de l'application devra faire l'objet d'une évaluation sur les cara
 * La documentation technique et fonctionnelle du code. 
 * La qualité du code. 
 * La couverture du code par les tests et la qualité des tests. 
-* La qualité du dépôt Git et de l'historique des commits. 
 * L'impact environnemental de l'application (https://www.website-footprint.com/fr/). 
 * Les performances de l'application. 
 * La sécurité de l'application.
