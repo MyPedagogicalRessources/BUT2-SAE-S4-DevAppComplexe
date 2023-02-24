@@ -191,7 +191,7 @@ Le code des contrôleurs de l'application fait l'objet d'une couverture de code 
 ====
 *DEV003 - Amélioration des tests automatisés*
 
-La répartition entre les tests unitaires et tests d'intégration doit se conformer à l'esprit de la pyramide des tests de M. Cohn. 
+Les contrôleurs seront testés majoritairement en tests unitaires alors que les services seront testés majoritairement en tests d'intégration. 
 ====
 
 ====
