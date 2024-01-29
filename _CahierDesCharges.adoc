@@ -34,8 +34,7 @@ Le premier travail de l'équipe concerne la réalisation d'un audit de la versio
     
 1. Évaluation 
 2. Plan d'amélioration
-3. Choix de la configuration des machines virtuelles
-4. Démonstration de la faisabilité
+3. Démonstration de la faisabilité
 
 Le document, en tant que livrable produit, sera accessible en ligne avec accès en mode suggestion à toutes les parties prenantes.
 ====
@@ -67,19 +66,13 @@ Ce plan d'amélioration prendra la forme d'une liste d'exigences techniques, de 
 ====
 
 ====
-*AUD005 - Choix de la configuration des machines virtuelles*
-
-Les contraintes de développement décrivent des exigences relatives à l'utilisation de la virtualisation pour faciliter la recette du projet (DEV003 et DEV004). La partie "Choix de la configuration des machines virtuelles" doit contenir les spécifications des machines virtuelles à mettre en place pour répondre aux exigences DEV003 et DEV004.
-====
-
-====
-*AUD006 - Démonstration de la faisabilité du projet*
+*AUD005 - Démonstration de la faisabilité du projet*
 
 La partie "Démonstration faisabilité" fera l'objet d'une présentation des arguments avancés par l'équipe pour démontrer sa capacité à réaliser le plan d'amélioration dans les délais impartis.
 ====
 
 ====
-*AUD007 - Restitution en anglais du travail sur l'impact environnemental*
+*AUD006 - Restitution en anglais du travail sur l'impact environnemental*
 
 L'évaluation de l'impact environnemental et le plan d'amélioration associé à cette partie de l'évaluation feront l'objet d'une restitution orale en anglais. Cette soutenance en anglais s'appuira sur un diaporama rédigé en anglais. +
 Le document contenant le diaporama aura pour nom "SAE-S4-Environment-Impact-<Noms membres équipe>"
