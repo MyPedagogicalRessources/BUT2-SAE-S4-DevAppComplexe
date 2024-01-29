@@ -216,5 +216,81 @@ Le projet FestiplAndroid doit être testable sur un système Android déployé d
 Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
 ====
 
+== Livrables produit
 
+=== Audit qualité de l'application 
+
+Voir exigence AUD001 du cahier des charges.
+
+=== Diaporama de la restitution en anglais du travail sur l'impact environnemental
+
+Voir exigence AUD007 du cahier des charges.
+
+=== Les exigences produit
+
+[cols="1,1,2"]
+|===
+|Identifiant livrable | Libellé court |Description
+
+|SPEC001 | Backlog produit
+|Le backlog pour les user stories et autres exigences non transverses.
+
+|SPEC002 | Définition de fini
+|Le document de "définition de fini" pour les exigences transverses.
+
+|SPEC003 | Diagrammes de cas d'utilisation
+|Les diagrammes de cas d'utilisation de la ou des applications à développer.
+|===
+
+
+=== Le code source
+
+[cols="1,1,2"]
+|===
+|Identifiant livrable | Libellé court | Description
+
+|SRC001
+|Code source
+|Le code source hébergé sur Github.
+|===
+
+=== Les machines virtuelles
+
+[cols="1,1,2"]
+|===
+|Identifiant livrable | Libellé court | Description
+
+|VM001
+|Machines virtuelles
+|Les images des machines virtuelles exigées par le cahier des charges.
+
+|VM002| Documentation VM
+| Le mode d’emploi pour la configuration de VirtualBox (si besoin) et l’installation des machines virtuelles.
+|===
+
+WARNING: Lieu de stockage : maintien des clés USB comme l'année dernière ?
+
+=== Les documentations (hors VM) 
+
+[cols="1,1,2"]
+|===
+|Identifiant livrable | Libellé court | Description
+
+|DOC001 | Documentation utilisateur
+| La documentation utilisateur peut être multiple, administrateur, utilisateur, …. À chaque sprint ayant ajouté des fonctionnalités utilisateurs, la documentation utilisateur doit être maintenue à jour.
+
+|DOC002 | Documentation technique
+a|La documentation technique doit être composée&nbsp;:
+
+* d'une description de l'architecture technique du projet 
+* d'une description des technologies utilisées
+* d'une description de points spécifiques techniques particuliers dépendants du projet (par exemple la sécurité sur un projet web, la présentation d'un algorithme complexe, etc.). 
+* Et de tous les éléments demandés par les enseignants évaluateurs.
+
+À chaque sprint, la documentation technique doit être maintenue à jour.
+|===
+
+IMPORTANT: La documentation technique sera évaluée sur sa capacité à permettre à un nouvel arrivant sur le projet de comprendre et de s'approprier la solution sur le plan technique.
+
+    
 
