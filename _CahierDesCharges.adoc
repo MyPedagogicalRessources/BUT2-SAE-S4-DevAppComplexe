@@ -30,7 +30,7 @@ Le premier travail de l'équipe concerne la réalisation d'un audit de la versio
 À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. 
 
 * Le document aura pour nom "SAE-S4-Audit-Festiplan-V1-<Noms membres équipe>".
-* Le document sera structuré en 4 parties en plus de l'introduction et de la conclusion :
+* Le document sera structuré en 3 parties en plus de l'introduction et de la conclusion :
     
 1. Évaluation 
 2. Plan d'amélioration
@@ -132,7 +132,6 @@ Pour retrouver plus rapidement les festivals que j'avais repéré.
 
 === Architecture de l'application
 
-
 ====
 *ARC001 - Architecture 3-tiers*
 
@@ -149,6 +148,32 @@ L'application est une application conçue sur la base du _design pattern_ MVC.
 *ARC003 - API REST*
 
 L'application fournie une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
+====
+
+=== Contraintes de développement
+
+====
+*DEV001 - Tests automatisés sur les nouveaux services*
+
+Le code des nouveaux services métier développés dans le Modèle de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+====
+
+====
+*DEV002 - Utilisation de PHPStan* 
+
+L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour maintenir la qualité du code tout au long du projet.
+====
+
+====
+*DEV003 - Projet FestiplAndroid "virtualisé"*
+
+Le projet FestiplAndroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
+====
+
+====
+*DEV004 - Projet Festiplan "virtualisé"*
+
+Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
 ====
 
 === Environnements techniques
@@ -178,41 +203,15 @@ Git version 2.32 ou supérieure
 ====
 
 ====
-*TECH005 - Virtual box*
+*TECH005 - Environnement de virtualisation*
 
-Virtual Box version 7.0.14/
+Virtual Box version 7.0.14.
 ====
 
 ====
-*TECH005 - Environnement de programmation _front-end_ mobile*
+*TECH006 - Environnement de programmation _front-end_ mobile*
 
 Android version 9. Le _front-end_ mobile devra fonctionner sur une machine virtuelle Android (cf. DEV003).
-====
-
-=== Contraintes de développement
-
-====
-*DEV001 - Tests automatisés sur les nouveaux services*
-
-Le code des nouveaux services métier développés dans le Modèle de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
-====
-
-====
-*DEV002 - Utilisation de PHPStan* 
-
-L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour maintenir la qualité du code tout au long du projet.
-====
-
-====
-*DEV003 - Projet FestiplAndroid "virtualisé"*
-
-Le projet FestiplAndroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox version 7.0.14. 
-====
-
-====
-*DEV004 - Projet Festiplan "virtualisé"*
-
-Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox version 7.0.14.
 ====
 
 == Livrables produit
