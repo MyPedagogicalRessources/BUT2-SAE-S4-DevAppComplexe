@@ -1,4 +1,4 @@
-= Cahier des Charges - Application CheckYourMood v2
+= Cahier des Charges - Application Festiplan v2
 :author: Franck Silvestre
 :title-page: true
 :icons: font
@@ -7,18 +7,18 @@
 
 == Introduction
 
-La startup _CheckYourMood_ souhaite développer une deuxième version de son application Web éponyme.
+La startup _Festiplan_ souhaite développer une deuxième version de son application Web éponyme.
 
-La version 1 de l'application permet à un utilisateur enregistré sur la plateforme d'indiquer son humeur à différents moments de la journée afin de pouvoir disposer de visualisations sur son humeur au fil du temps en fonction de différents paramètres comme la période, le type d'humeur, etc. Pour plus de détails sur la version 1 de l'application, vous pouvez consulter le cahier des charges de la version 1 (cf. SAÉ du semestre 3).
+La version 1 de l'application permet la gestion de la planification des spectacles (pièces de théatre, concerts) sur les différentes scènes mise à disposition par les organisateurs du festival. Pour plus de détails sur la version 1 de l'application, vous pouvez consulter le cahier des charges de la version 1 (cf. SAÉ du semestre 3).
 
 La version 2 de l'application vise 2 objectifs :
 
 * Améliorer la qualité de l'application (code, tests, impact environnemental, sécurité).
-* Fournir une version mobile Android de la saisie des humeurs.
+* Fournir une version mobile Android de la consultation des festival planifiés.
 
 Ce document présente les exigences produits permettant de livrer à la startup la deuxième version de son projet en temps et en heure.
 
-Dans la suite du document, les termes "application", "plateforme" ou "logiciel" désignent de manière indifférente l'application Web _CheckYourMood_.
+Dans la suite du document, les termes "application", "plateforme" ou "logiciel" désignent de manière indifférente l'application Web _Festiplan_.
 
 == Audit qualité de l'application 
 
@@ -29,7 +29,7 @@ Le premier travail de l'équipe concerne la réalisation d'un audit de la versio
 
 À l'issue de l'audit, un document contiendra la restitution des résultats de l'audit. 
 
-* Le document aura pour nom "SAE-S4-Audit-CheckYourMood-V1-<Noms membres équipe>".
+* Le document aura pour nom "SAE-S4-Audit-Festiplan-V1-<Noms membres équipe>".
 * Le document sera structuré en 4 parties en plus de l'introduction et de la conclusion :
     
 1. Évaluation 
@@ -89,34 +89,50 @@ Le document contenant le diaporama aura pour nom "SAE-S4-Environment-Impact-<Nom
 
 Les exigences fonctionnelles sont décrites au format User Story. Elles sont regroupées en _features_. 
 
-=== _Feature_ F004 "Client mobile Android CheckYourMood" 
+=== _Feature_ F005 "Client mobile Android Festiplan" 
 
-Cette feature comprend les fonctionnalités relatives à l'utilisation d'un client mobile Android pour utiliser l'application. Dans la suite du document, l'application mobile CheckYourMood Mobile sera désignée par le label CYMDroid.
+Cette feature comprend les fonctionnalités relatives à l'utilisation d'un client mobile Android pour utiliser l'application. Dans la suite du document, l'application mobile Festiplan Mobile sera désignée par le label FestiplAnroid.
 
-IMPORTANT: CYMDroid est un client mobile s'interfaçant à l'application CheckYourMood.  CYMDroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modifiées via l'application CheckYourMood via une API REST comme cela est rappelé dans les exigences techniques.
+IMPORTANT: FestiplAndroid est un client mobile s'interfaçant à l'application Festiplan.  FestiplAndroid ne stocke pas de données sur le client mobile. Les données sont récupérées ou modifiées via l'application Festiplan via une API REST comme cela est rappelé dans les exigences techniques.
 
 ====
-*US041 - Authentification*
+*F005US001 - Authentification*
 
 En tant qu'utilisateur ayant un compte sur la plateforme, +
-Je veux m'authentifier avec un login et un mot de passe depuis mon application CYMDroid, +
-Pour avoir accès à certaines fonctionnalités de CheckYourMood depuis mon mobile avec une expérience utilisateur optimale.
+Je veux m'authentifier avec un login et un mot de passe depuis mon application FestiplAndroid, +
+Pour avoir accès à certaines fonctionnalités de Festiplan depuis mon mobile avec une expérience utilisateur optimale.
 ====
 
 ====
-*US042 - Consultation des dernières humeurs saisies*
+*F005US002 - Consultation des festivals programmés*
 
 En tant qu'utilisateur authentifié, +
-Je veux consulter la liste des 5 dernnières humeurs saisies, +
-Pour prendre connaissance de la tendance de mes dernières humeurs.
+Je veux consulter la liste des prochains festivals programmés, +
+Pour être informé des festivals qui pourraient m'intéresser.
 ====
 
 ====
-*US043 - Saisie d'une humeur*
+*F005US003 - Consultation du détail d'un festival programmé*
 
-En tant qu'utilisateur authentifié sur CYMDroid, +
-Je veux ajouter une humeur à tout instant de la journée, +
-Pour obtenir à terme le plus d'information possible sur mon humeur au fil du temps.
+En tant qu'utilisateur authentifié, +
+Je veux consulter la liste des spectacles d'un festival programmé, +
+Pour acoir une idée plus précise sur sur un festival qui pourrait m'intéresser.
+====
+
+====
+*F005US004 - Mise en favori d'un festival*
+
+En tant qu'utilisateur authentifié sur FestiplAndroid, +
+Je veux mettre en favori un festival, +
+Pour le retrouver plus rapidement lors de ma consultation des festivals.
+====
+
+====
+*F005US005 - Consultation des festivals programmés mis en favoris*
+
+En tant qu'utilisateur authentifié sur FestiplAndroid, +
+Je veux consulter la liste de mes festivals favoris, +
+Pour retrouver plus rapidement les festivals que j'avais repéré.
 ====
 
 == Exigences techniques
@@ -177,39 +193,27 @@ Android version 9. Le _front-end_ mobile devra fonctionner sur une machine virtu
 === Contraintes de développement
 
 ====
-*DEV001 - Tests automatisés sur les services*
+*DEV001 - Tests automatisés sur les nouveaux services*
 
-Le code des services métier développés dans le Modèle de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
+Le code des nouveaux services métier développés dans le Modèle de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 80%. 
 ====
 
 ====
-*DEV002 - Tests automatisés sur les contrôleurs*
-
-Le code des contrôleurs de l'application fait l'objet d'une couverture de code par les tests automatisés supérieure à 40%. 
-====
-
-====
-*DEV003 - Amélioration des tests automatisés*
-
-Les contrôleurs seront testés majoritairement en tests unitaires alors que les services seront testés majoritairement en tests d'intégration. 
-====
-
-====
-*DEV004 - Utilisation de PHPStan* 
+*DEV002 - Utilisation de PHPStan* 
 
 L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] devra être mis en place pour maintenir la qualité du code tout au long du projet.
 ====
 
 ====
-*DEV005 - Projet CYMDroid "virtualisé"*
+*DEV003 - Projet FestiplAndroid "virtualisé"*
 
-Le projet CYMDroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
+Le projet FestiplAndroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
 ====
 
 ====
-*DEV006 - Projet CheckYourMood "virtualisé"*
+*DEV004 - Projet Festiplan "virtualisé"*
 
-Le projet CheckYourMood V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
+Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
 ====
 
 
