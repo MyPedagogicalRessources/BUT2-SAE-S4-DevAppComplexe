@@ -211,7 +211,7 @@ Android version 9. Le _front-end_ mobile devra fonctionner sur une machine virtu
 ====
 *TECH006 - Environnement de virtualisation sur clé USB*
 
-Virtual Box version 7.0.14.
+VirtualBox version 7.0.14.
 
 Stockage des machines virtuelles (voir DEV003 et DEV004) sur clé USB 32 Go formatée en NTFS.
 Les machines virtuelles doivent fonctionner sur un hôte ayant les caractéristiques importantes suivantes : Windows 11, processeur 4 coeurs, 8 Go de RAM de libre.
