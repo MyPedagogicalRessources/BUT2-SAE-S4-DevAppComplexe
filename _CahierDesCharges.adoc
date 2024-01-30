@@ -167,13 +167,13 @@ L'outil d'analyse statique de code https://github.com/phpstan/phpstan[PHPStan] d
 ====
 *DEV003 - Projet FestiplAndroid "virtualisé"*
 
-Le projet FestiplAndroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox. 
+Le projet FestiplAndroid doit être testable sur un système Android déployé dans une machine virtuelle sous VirtualBox et directement depuis une clé USB fournie par l'équipe pédagogique. 
 ====
 
 ====
 *DEV004 - Projet Festiplan "virtualisé"*
 
-Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox.
+Le projet Festiplan V2 doit être testable sur un système LAMPfootnote:[Linux Apache MySQL PhP] déployé dans une machine virtuelle sous VirtualBox et directement depuis une clé USB fournie par l'équipe pédagogique.
 ====
 
 === Environnements techniques
@@ -203,15 +203,18 @@ Git version 2.32 ou supérieure
 ====
 
 ====
-*TECH005 - Environnement de virtualisation*
-
-Virtual Box version 7.0.14.
-====
-
-====
-*TECH006 - Environnement de programmation _front-end_ mobile*
+*TECH005 - Environnement de programmation _front-end_ mobile*
 
 Android version 9. Le _front-end_ mobile devra fonctionner sur une machine virtuelle Android (cf. DEV003).
+====
+
+====
+*TECH006 - Environnement de virtualisation sur clé USB*
+
+Virtual Box version 7.0.14.
+
+Stockage des machines virtuelles (voir DEV003 et DEV004) sur clé USB 32 Go formatée en NTFS.
+Les machines virtuelles doivent fonctionner sur un hôte ayant les caractéristiques importantes suivantes : Windows 11, processeur 4 coeurs, 8 Go de RAM de libre.
 ====
 
 == Livrables produit
@@ -260,10 +263,18 @@ Voir exigence AUD007 du cahier des charges.
 
 |VM001
 |Machines virtuelles
-|Les images des machines virtuelles exigées par le cahier des charges sur clé USB fournie par l'équipe de développement.
+|Les machines virtuelles sur clé USB conformément aux exigences DEV003, DEV004 et  TECH006.
 
 |VM002| Documentation VM
-| Le mode d’emploi pour la configuration de VirtualBox (si besoin) et l’installation des machines virtuelles.
+a| Partie I : justification (avec citation des sources si nécessaire) des choix des principales caractéristiques de chaque machine virtuelle, dont :
+
+* nom de la VM, nom et chemin du (des) disque(s) virtuel(s), nom et chemin du fichier de configuration
+* type et taille du disque virtuel attaché ; type d'attachement
+* quantité de RAM allouée
+* nombre de coeur(s) processeur alloué(s)
+* mode réseau et adressage IP
+
+Partie II : un manuel utilisateur pour configurer VirtualBox (le plus simplement possible) afin de lancer l'exécution des 2 machines virtuelles directement depuis la clé USB (voir DEV003, DEV004 et TECH006)
 |===
 
 === Les documentations (hors VM) 
