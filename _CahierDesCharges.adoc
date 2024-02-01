@@ -1,5 +1,6 @@
 = Cahier des Charges - Application Festiplan v2
 :author: Équipe pédagogique SAÉ S4
+v2024-02
 :title-page: true
 :icons: font
 :toc: left
@@ -155,7 +156,7 @@ L'application est une application conçue sur la base du _design pattern_ MVC.
 ====
 *ARC003 - API REST*
 
-L'application fournie une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
+L'application fournit une API REST permettant au client mobile de communiquer avec le _back end_ pour réaliser les fonctionnalités attendues du client mobile.
 ====
 
 === Contraintes de développement
@@ -248,8 +249,8 @@ Voir exigence AUD007 du cahier des charges.
 |Le document de "définition de fini" pour les exigences transverses.
 
 |SPEC003 | Diagrammes de cas d'utilisation
-a|* Les diagrammes de cas d'utilisation de l'application Festiplan.
-* Les diagrammes de cas d'utilisation de l'application Android.
+a|* Le diagramme de cas d'utilisation de l'application Festiplan.
+* Le diagramme de cas d'utilisation de l'application Android.
 
 Un document pdf  contenant les diagrammes sera déposé sur Moodle (prévoir une page de garde). Ce document précisera également l’URL du dépôt GitHub du projet (le but est de donner un accès aux User Stories et aux tests d’acceptation)
 |===
