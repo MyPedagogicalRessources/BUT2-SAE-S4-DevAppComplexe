@@ -1,5 +1,5 @@
 = Cahier des Charges - Application Festiplan v2
-:author: Franck Silvestre
+:author: Équipe pédagogique SAÉ S4
 :title-page: true
 :icons: font
 :toc: left
