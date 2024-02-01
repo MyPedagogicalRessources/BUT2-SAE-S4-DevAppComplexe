@@ -225,7 +225,7 @@ Stockage des machines virtuelles (voir DEV003 et DEV004) sur clé USB 32 Go form
 Les machines virtuelles doivent fonctionner sur un hôte ayant les caractéristiques importantes suivantes : Windows 11, processeur 4 coeurs, 8 Go de RAM de libre.
 ====
 
-== Livrables produit
+== Livrables produit attendus
 
 === Audit qualité de l'application 
 
@@ -242,13 +242,16 @@ Voir exigence AUD007 du cahier des charges.
 |Identifiant livrable | Libellé court |Description
 
 |SPEC001 | Backlog produit
-|Le backlog pour les user stories et autres exigences non transverses.
+|Le backlog contenant les user stories et les tests d'acceptation de l'application Android.
 
 |SPEC002 | Définition de fini
 |Le document de "définition de fini" pour les exigences transverses.
 
 |SPEC003 | Diagrammes de cas d'utilisation
-|Les diagrammes de cas d'utilisation de la ou des applications à développer.
+a|* Les diagrammes de cas d'utilisation de l'application Festiplan.
+* Les diagrammes de cas d'utilisation de l'application Android.
+
+Un document pdf  contenant les diagrammes sera déposé sur Moodle (prévoir une page de garde). Ce document précisera également l’URL du dépôt GitHub du projet (le but est de donner un accès aux User Stories et aux tests d’acceptation)
 |===
 
 
@@ -261,7 +264,12 @@ Voir exigence AUD007 du cahier des charges.
 |SRC001
 |Code source
 |Le code source hébergé sur Github.
+
+|SRC002
+|Le projet Android Studio
+|Le projet Android Studio de l’application mobile sera compressé et déposé sur Moodle.
 |===
+
 
 === Les machines virtuelles
 
